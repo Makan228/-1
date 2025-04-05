@@ -1,0 +1,201 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding-top: 20px;
+  min-height: 70px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header .logo span {
+  color: #e44d26; /* Оранжевый цвет для акцента */
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+/* Hero Section */
+#hero {
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Catalog Section */
+#catalog {
+  padding: 50px 0;
+}
+
+#catalog h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.product-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product-item p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.price {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #e44d26;
+}
+
+/* About Section */
+#about {
+  padding: 50px 0;
+  background-color: #eee;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background: #e44d26;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #c63e1f;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media(max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  header li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #hero h1 {
+    font-size: 2.5em;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
