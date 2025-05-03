@@ -1,0 +1,216 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Светло-серый фон */
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  /* Шрифты */
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+  
+  /* Header */
+  header {
+    background: #000; /* Черный фон для хедера */
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  header ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header .logo img {
+    width: 100px; /* Размер логотипа */
+    vertical-align: middle;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: url('images/gucci-hero.jpg') no-repeat center center/cover; /* Роскошный фон */
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  
+  #hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Тень для текста */
+  }
+  
+  #hero p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Catalog Section */
+  #catalog {
+    padding: 50px 0;
+  }
+  
+  #catalog h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #000; /* Черный цвет для заголовка */
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Увеличенные размеры */
+    gap: 30px;
+  }
+  
+  .product-item {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Более выраженная тень */
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Закругленные углы */
+  }
+  
+  .product-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #000; /* Черный цвет для названия */
+  }
+  
+  .product-item p {
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+  
+  .price {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #a88454; /* Золотой цвет для цены */
+  }
+  
+  /* About Section */
+  #about {
+    padding: 50px 0;
+    background-color: #fff; /* Белый фон */
+  }
+  
+  #about h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #000; /* Черный цвет */
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 0;
+    background-color: #f0f0f0; /* Светло-серый */
+  }
+  
+  #contact h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #000; /* Черный цвет */
+  }
+  
+  /* Button */
+  .button {
+    display: inline-block;
+    background: #000; /* Черный цвет для кнопки */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .button:hover {
+    background: #333; /* Более темный черный при наведении */
+  }
+  
+  /* Footer */
+  footer {
+    background: #000; /* Черный фон */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  /* Media Queries */
+  @media(max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    header nav {
+      float: none;
+      text-align: center;
+    }
+  
+    header li {
+      display: block;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    #hero h1 {
+      font-size: 3em;
+    }
+  
+    #hero p {
+      font-size: 1.2em;
+    }
+  
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
